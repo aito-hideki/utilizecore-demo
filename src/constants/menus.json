@@ -1,0 +1,293 @@
+{
+  "links": [
+    {
+      "label": "Company Settings",
+      "id": "company-settings",
+      "icon": "mdi-cogs",
+      "to": "/company/settings/work_orders",
+      "rel": "/company/settings"
+    },
+    {
+      "label": "Payment Settings",
+      "id": "company-payment-settings",
+      "icon": "mdi-cash-usd-outline",
+      "to": "/company/wizard/profile/edit?step=payment_accounts"
+    },
+    {
+      "label": "Switch Company",
+      "id": "company-switch",
+      "icon": "mdi-cash-usd-outline",
+      "event": "switch-company"
+    },
+    {
+      "label": "Create Company",
+      "id": "company-create",
+      "icon": "mdi-domain-plus",
+      "event": "create-company"
+    },
+    {
+      "label": "Join Company",
+      "id": "company-join",
+      "icon": "mdi-account-plus",
+      "event": "join-company"
+    },
+    {
+      "label": "Calendar",
+      "id": "company-calendar",
+      "icon": "mdi-calendar",
+      "to": "/company/dispatch"
+    },
+    {
+      "label": "Map & Sites",
+      "id": "company-map-sites",
+      "icon": "mdi-map-marker-radius",
+      "to": "/company/locations"
+    },
+    {
+      "label": "Map",
+      "id": "company-map",
+      "icon": "mdi-map-marker-radius",
+      "to": "/company/locations/mapview"
+    },
+    {
+      "label": "Sites",
+      "id": "company-sites",
+      "icon": "mdi-map-search-outline",
+      "to": "/company/locations",
+      "exact": true
+    },
+    {
+      "label": "Work Orders",
+      "id": "company-work-orders",
+      "icon": "mdi-clipboard-text-multiple-outline",
+      "to": "/company/outbound/work_orders",
+      "exact": true
+    },
+    {
+      "label": "Time Tracker",
+      "id": "company-time-tracker",
+      "icon": "mdi-alarm",
+      "to": "/company/work_order_services"
+    },
+    {
+      "label": "Proposals",
+      "id": "company-sales-proposals",
+      "icon": "mdi-file-document-edit",
+      "to": "/company/proposals/outbound"
+    },
+    {
+      "label": "Agreements",
+      "id": "company-sales-agreements",
+      "icon": "mdi-handshake",
+      "to": "/company/outbound/agreement_contracts"
+    },
+    {
+      "label": "Invoices",
+      "id": "company-invoices",
+      "icon": "mdi-handshake",
+      "to": "/company/invoices/outbound"
+    },
+    {
+      "label": "Purchase Orders",
+      "id": "company-purchase-orders",
+      "icon": "mdi-cart-outline",
+      "to": "/company/purchase_orders/outbound"
+    },
+    {
+      "label": "Payments",
+      "id": "company-payments",
+      "icon": "mdi-cash-multiple",
+      "to": "/company/payments"
+    },
+    {
+      "label": "Items",
+      "id": "company-items",
+      "icon": "mdi-shape-outline",
+      "to": "/company/item_types"
+    },
+    {
+      "label": "Clients",
+      "id": "company-clients",
+      "icon": "mdi-account-check",
+      "to": "/company/clients"
+    },
+    {
+      "label": "Team Members",
+      "id": "company-members",
+      "icon": "mdi-account-group",
+      "to": "/company/company_users"
+    },
+    {
+      "label": "Crews",
+      "id": "company-crews",
+      "icon": "mdi-account-multiple",
+      "to": "/company/crews"
+    },
+    {
+      "label": "Tradesmen",
+      "id": "company-tradesmen",
+      "icon": "mdi-transit-transfer",
+      "to": "/company/tradesmens"
+    },
+    {
+      "label": "Roles",
+      "id": "company-roles",
+      "icon": "mdi-account-hard-hat",
+      "to": "/company/roles"
+    },
+    {
+      "label": "Vendors",
+      "id": "company-vendors",
+      "icon": "mdi-room-service",
+      "to": "/company/vendors"
+    },
+    {
+      "label": "Trades",
+      "id": "company-trades",
+      "icon": "mdi-briefcase-plus",
+      "to": "/company/trades"
+    },
+    {
+      "label": "Trade Services",
+      "id": "company-trade-services",
+      "icon": "mdi-room-service",
+      "to": "/company/trade_services"
+    },
+    {
+      "label": "Trade Services Rates",
+      "id": "company-trade-service-rates",
+      "icon": "mdi-chart-bar",
+      "to": "/company/labor_rates"
+    },
+    {
+      "label": "Trade Services Tasks",
+      "id": "company-trade-service-tasks",
+      "icon": "mdi-format-list-checks",
+      "to": "/company/tasks"
+    },
+    {
+      "label": "Inventory",
+      "id": "company-inventory",
+      "icon": "mdi-tools",
+      "to": "/company/locations?card_view=true"
+    }
+  ],
+  "sidebar": [
+    {
+      "label": "Core",
+      "id": "core",
+      "icon": "mdi-office-building",
+      "core": true,
+      "children": [
+        "company-settings",
+        "company-payment-settings",
+        "company-switch",
+        "company-create",
+        "company-join"
+      ]
+    },
+    {
+      "label": "Operations",
+      "id": "operations",
+      "icon": "mdi-cog-transfer",
+      "children": [
+        "company-calendar",
+        "company-map-sites",
+        "company-work-orders",
+        "company-time-tracker"
+      ]
+    },
+    {
+      "label": "Sales",
+      "id": "sales",
+      "icon": "mdi-currency-usd-circle-outline",
+      "children": [
+        "company-sales-proposals",
+        "company-sales-agreements"
+      ]
+    },
+    {
+      "label": "Accounting",
+      "id": "accounting",
+      "icon": "mdi-account-cash",
+      "children": [
+        "company-invoices",
+        "company-purchase-orders",
+        "company-payments",
+        "company-items"
+      ]
+    },
+    {
+      "label": "Network",
+      "id": "network",
+      "icon": "mdi-account-tie",
+      "children": [
+        "company-clients",
+        "company-members",
+        "company-crews",
+        "company-tradesmen",
+        "company-roles",
+        "company-vendors"
+      ]
+    },
+    {
+      "label": "Product & Services",
+      "id": "product-services",
+      "icon": "mdi-briefcase",
+      "children": [
+        "company-trades",
+        "company-trade-services",
+        "company-trade-service-rates",
+        "company-trade-service-tasks",
+        "company-inventory"
+      ]
+    }
+  ],
+  "shortcuts": [
+    {
+      "label": "Operations",
+      "id": "operations",
+      "icon": "mdi-cog-transfer",
+      "children": [
+        "company-calendar",
+        "company-map",
+        "company-sites",
+        "company-work-orders",
+        "company-time-tracker"
+      ]
+    },
+    {
+      "label": "Sales",
+      "id": "sales",
+      "icon": "mdi-currency-usd-circle-outline",
+      "children": [
+        "company-sales-proposals",
+        "company-sales-agreements"
+      ]
+    },
+    {
+      "label": "Accounting",
+      "id": "accounting",
+      "icon": "mdi-account-cash",
+      "children": [
+        "company-invoices",
+        "company-purchase-orders",
+        "company-payments",
+        "company-items"
+      ]
+    },
+    {
+      "label": "Network",
+      "id": "network",
+      "icon": "mdi-account-tie",
+      "children": [
+        "company-clients",
+        "company-members",
+        "company-crews",
+        "company-tradesmen",
+        "company-roles",
+        "company-vendors"
+      ]
+    }
+  ]
+}
